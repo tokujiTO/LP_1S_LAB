@@ -11,4 +11,12 @@ def mais_caros(dic):
     maiores = novoDic[-3:]
     return maiores
 
-# def calcula_medias():
+def calcula_medias(lista):
+    novaLista = []
+    for d in lista:
+        dicti = dict()
+        dicti["RA"] = d["RA"]
+        media = (d["P1"] + d["P2"])/2
+        dicti["Media"] = media
+        novaLista.append(dicti)
+    return novaLista
