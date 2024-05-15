@@ -33,3 +33,4 @@ def distribuir_cartas(baralho, cada):
         mao.append(carta)
         baralho.pop(baralho.index(carta))
     return mao
+
